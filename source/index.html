@@ -53,7 +53,11 @@
         <h2 class="hero__title">Функциональное питание для котов</h2>
         <p class="hero__description">Занялся собой?Займись котом!</p>
         <a class="hero__button button" href="#">подобрать программу</a>
-        <img class="hero__main-picture" src="#" width="720" height="694" alt="Кот-облиза">
+
+        <picture>
+          <source type="image/png" media="(min-width:1440px)" srcset="images/index-catbackground-desktop@1x.png 1x, images/index-catbackground-desktop@2x.png 2x" width="720" height="694">
+          <img class="hero__main-picture" src="images/index-catbackround-mobile@1x.png" srcset="images/index-catbackground-mobile@2x.png 2x" width="280" height="270" alt="корм кэт энерджи">
+        </picture>
 
         <picture>
           <source type="image/png" media="(min-width:1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x" width="552" height="499">

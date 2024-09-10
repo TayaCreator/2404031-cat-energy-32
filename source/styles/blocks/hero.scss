@@ -1,23 +1,65 @@
 
 
 .hero {
+
   font-family: "Oswald", sans-serif;
-  background-image: linear-gradient(to right, #ffffff 50%, $primary-color 50%);
 }
 
-.hero__wrapper {
-  background-image: linear-gradient(to bottom, $primary-color 50%, #ffffff 50%);
 
+/*
+.gradient {
+	display: inline-block;
+	position: relative;
+	line-height: 0;
+}
+.gradient:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: transparent;
+	background-image: linear-gradient(to left, #11de93, #0e7ad6);
+	opacity: 0.8;
+} */
+
+
+/*
   @media (min-width: 768px) {
     background-image: none;
     background-color: #ffffff;
   }
 
-  @media (min-width: 768px) {
-    background-image: linear-gradient(to right, #ffffff 50%, $primary-color 50%);
+  @media (min-width: 1440px) {
+    background-image:
+      linear-gradient(to right,
+      #ffffff 50%,
+      rgba(104, 183, 56, 0.85)
+      50%), url("/source/images/index-catbackground-desktop@2x.png");
+
   }
 }
+*/
 
+.hero__main-picture {
+
+  position: relative;
+  margin-left: 720px;
+  width: 720px;
+  height: 694px;
+}
+
+.hero__main-picture::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: $primary-color;
+  opacity: 0.8;
+}
 
 .hero__title {
   font-family: "Oswald", sans-serif;
