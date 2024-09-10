@@ -2,7 +2,7 @@
 
 .hero {
   font-family: "Oswald", sans-serif;
-  background-color: rgba(104, 183, 56, 1);
+  background-image: linear-gradient(to right, #ffffff 50%, $primary-color 50%);
 }
 
 .hero__title {
@@ -31,5 +31,17 @@
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 26px;
+  }
+}
+
+.hero__main-picture {
+  background-image: linear-gradient(to top, #ffffff 50%, $primary-color 50%);
+
+  @media (min-width: 768px) {
+    background-image: none;
+  }
+
+  @media (min-width: 768px) {
+    background-image: linear-gradient(to right, #ffffff 50%, $primary-color 50%);
   }
 }
