@@ -5,6 +5,20 @@
   background-image: linear-gradient(to right, #ffffff 50%, $primary-color 50%);
 }
 
+.hero__wrapper {
+  background-image: linear-gradient(to bottom, $primary-color 50%, #ffffff 50%);
+
+  @media (min-width: 768px) {
+    background-image: none;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: 768px) {
+    background-image: linear-gradient(to right, #ffffff 50%, $primary-color 50%);
+  }
+}
+
+
 .hero__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
@@ -34,14 +48,3 @@
   }
 }
 
-.hero__main-picture {
-  background-image: linear-gradient(to top, #ffffff 50%, $primary-color 50%);
-
-  @media (min-width: 768px) {
-    background-image: none;
-  }
-
-  @media (min-width: 768px) {
-    background-image: linear-gradient(to right, #ffffff 50%, $primary-color 50%);
-  }
-}
