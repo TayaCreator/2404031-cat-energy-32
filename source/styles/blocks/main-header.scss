@@ -6,3 +6,8 @@
 .main-header__logo:active {
   filter: opacity(50%);
 }
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}

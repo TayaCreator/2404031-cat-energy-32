@@ -1,5 +1,7 @@
 .catalog {
   background-color: #ffffff;
+  width: 1220px;
+  height: 1229px;
 }
 
 
@@ -12,6 +14,28 @@
   color: #000000;
 }
 
+.catalog__product-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__product-item {
+  width: 245px;
+  height: 511px;
+}
+
+.catalog__product-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 169px;
+  height: 471px;
+  margin: 81px 38px 40px;
+}
+
+.catalog__product-item-image {
+  margin: 19px 4px;
+}
 
 .catalog__product-title {
   font-family: "Oswald", sans-serif;
