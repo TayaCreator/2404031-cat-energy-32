@@ -9,7 +9,8 @@ body {
   content: "";
   position: absolute;
   margin-left: 720px;
-  background-image: url("/source/images/index-catbackground-desktop@2x.jpg");
+
+  background: url("/source/images/index-catbackground-desktop@2x.jpg");
   width: 720px;
   height: 694px;
   top: 0%;
@@ -20,9 +21,9 @@ body {
 .body--main-image::after {
   content: "";
   position: absolute;
-  background-color: rgba(104, 183, 56, 0.85);
+  background-image: linear-gradient(90deg, #ffffff 50%, $primary-color 50%);
   top: 0;
-  left: 50%;
+  left: -50%;
   z-index: 1;
 }
 

@@ -43,27 +43,6 @@
 }
 */
 
-.hero__main-picture {
-
-  position: relative;
-  margin-left: 720px;
-  width: 720px;
-  height: 694px;
-  z-index: 1;
-}
-
-.hero__main-picture::after {
-  content: "";
-  position: absolute;
-  width: 720px;
-  height: 694px;
-  background-color: $primary-color;
-  top: 0;
-  left: 0;
-  opacity: 0.8;
-  z-index: 2;
-}
-
 .hero__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
