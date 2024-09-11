@@ -2,7 +2,30 @@ body {
   font-family: $primary-font;
   font-size: 16px;
   line-height: 24px;
+  position: relative;
 }
+
+.body--main-image {
+  content: "";
+  position: absolute;
+  margin-left: 720px;
+  background-image: url("/source/images/index-catbackground-desktop@2x.jpg");
+  width: 720px;
+  height: 694px;
+  top: 0%;
+  left: 50%;
+  z-index: 2;
+}
+
+.body--main-image::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(104, 183, 56, 0.85);
+  top: 0;
+  left: 50%;
+  z-index: 1;
+}
+
 
 .visually-hidden {
   position: absolute;
