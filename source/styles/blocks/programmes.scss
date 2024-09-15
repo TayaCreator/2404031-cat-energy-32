@@ -138,13 +138,23 @@
   text-align: center;
   color: #000000;
   text-transform: uppercase;
-  position: relative;
+  display: flex;
 }
+
 
 .programmes__type-link::after {
   content: "";
-  background: url("../../icons/stack.svg#icon_arrow.svg");
+  background: url("../../icons/stack.svg#icon_arrow") no-repeat;
   width: 32px;
   height: 10px;
   position: absolute;
+  right: 130px;
+
+  @media (min-width: $tablet) {
+    right: 495px;
+  }
+
+  @media (min-width: $desktop) {
+    right: 357px;
+  }
 }
