@@ -2,8 +2,10 @@
   background-color: #eaeaea;
   display: block;
 
-  @media (min-width: $desktop) {
-    display: flex;
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px;
+    grid-template-rows: 120px 120px 120px;
   }
 }
 
@@ -47,6 +49,21 @@
   }
 }
 
+
+.example__values-container {
+  display: flex;
+  flex-direction: row;
+  width: 280px;
+
+  @media (min-width: $tablet) {
+    width: 377px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 376px;
+  }
+}
+
 .example__value {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -54,6 +71,9 @@
   line-height: 24px;
   text-align: center;
   color: #000000;
+  padding: 14px 42px 31px;
+  display: flex;
+  flex-direction: column;
 }
 
 .example__text {

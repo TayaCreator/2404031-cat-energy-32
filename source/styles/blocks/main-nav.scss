@@ -2,7 +2,7 @@
 
 .main-nav__list {
   @include list-style;
-  display: block;
+  display: none;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -42,3 +42,9 @@
     line-height: 29.64px;
   }
 }
+
+.main-nav__toggle {
+
+  background-image: url("../../icons/stack.svg#Logo_mobile");
+}
+
