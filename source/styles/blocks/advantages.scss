@@ -62,11 +62,13 @@
   width: 60px;
   height: 60px;
 
+
   @media (min-width: $tablet) {
     width: 60px;
     height: 60px;
   }
 }
+
 
 .advantages__icon--benefit {
   background-image: url("../../icons/stack.svg#icon-leaf");
