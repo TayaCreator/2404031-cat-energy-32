@@ -44,7 +44,14 @@
 }
 
 .main-nav__toggle {
-
   background-image: url("../../icons/stack.svg#Logo_mobile");
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 

@@ -31,7 +31,7 @@
   }
 }
 
-.footer__logo-link {
+.cattext--logo {
   mask-image: url("../../icons/stack.svg#logo-text");
   background-color: #111111;
   width: 113px;
@@ -44,12 +44,12 @@
   }
 }
 
-.footer__logo-link:hover,
-.footer__logo-link:focus {
+.cattext--logo:hover,
+.cattext--logo:focus {
   background-color: #3e3e3e;
 }
 
-.footer__logo-link:active {
+.cattext--logo:active {
   background-color: #6b6b6b;
 }
 
