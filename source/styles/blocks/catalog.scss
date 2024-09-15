@@ -18,12 +18,17 @@ ul.catalog__product-list {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .catalog__product-item {
   width: 245px;
   height: 511px;
   margin-right: 80px;
+  background-image:
+    linear-gradient(180deg,
+    #ffffff 30%,
+    #f2f2f2 30%);
 }
 
 .catalog__product-item:last-child {
@@ -35,7 +40,7 @@ ul.catalog__product-list {
   flex-direction: column;
   width: 169px;
   height: 471px;
-  margin: 81px 38px 40px;
+  margin: 0 38px 40px;
 }
 
 .catalog__product-item-image {
@@ -60,13 +65,13 @@ ul.catalog__product-list {
   margin-right: 14px;
   margin-left: 15px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 24px;
     width: 135px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     width: 140px;
   }
 }

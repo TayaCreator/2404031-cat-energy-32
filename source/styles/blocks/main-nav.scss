@@ -4,14 +4,14 @@
   @include list-style;
   display: block;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     display: flex;
     width: 463px;
     height: 36px;
     justify-content: space-between;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     width: 475px;
     height: 40px;
   }
@@ -27,7 +27,7 @@
   text-decoration: none;
   text-transform: lowercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
 
 
     font-size: 18px;
@@ -35,7 +35,7 @@
   }
 
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     color: #000000;
     font-family: "Oswald", sans-serif;
     font-size: 20px;

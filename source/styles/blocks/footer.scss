@@ -18,14 +18,14 @@
 .footer__container {
   display: block;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     display: flex;
     width: 708px;
     padding: 55px 30px;
     justify-content: space-between;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     width: 1220px;
     padding: 66px 110px;
   }
@@ -38,7 +38,7 @@
   height: 20px;
   cursor: pointer;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     width: 128px;
     height: 24px;
   }
