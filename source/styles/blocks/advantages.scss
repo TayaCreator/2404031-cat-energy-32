@@ -19,8 +19,16 @@
 
 
   @media (min-width: $tablet) {
-    display: flex;
-    justify-content: start;
+    display: grid;
+    grid-template-columns: repeat(2, 230px);
+    grid-template-rows: repeat (2, 280px);
+    gap: 37px 153px;
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(4, 230px);
+    row-gap: 94px;
   }
 }
 
@@ -31,58 +39,62 @@
   display: flex;
   flex-direction: row;
 
+
   @media (min-width: $tablet) {
     width: 246px;
     height: 280px;
-    display: flex;
     flex-direction: column;
   }
 
   @media (min-width: $desktop) {
     width: 230px;
     height: 280px;
+    display: flex;
+    flex-direction: row;
   }
 }
 
-/*
-.advantages__item::before {
-  position: absolute;
-  z-index: 2;
-  width: 60px;
-  height: 60px;
-  background-color: $primary-color;
-}
-  */
+
 .advantages__item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.advantages__icon {
+.advantages__item-benefit,
+.advantages__item-fast,
+.advantages__item-functionality,
+.advantages__item-health {
+  position: relative;
+}
+
+
+.advantages__item-benefit::before {
+  @include position;
+  background-image: url("../../icons/stack.svg#icon-leaf");
+  width: 60px;
+  height: 60px;
+}
+
+.advantages__item-fast::before {
+  @include position;
 
   width: 60px;
   height: 60px;
-
-
-  @media (min-width: $tablet) {
-    width: 60px;
-    height: 60px;
-  }
-}
-
-
-.advantages__icon--benefit {
-  background-image: url("../../icons/stack.svg#icon-leaf");
-}
-
-.advantages__icon--fast {
   background-image: url("../../icons/stack.svg#icon-instant");
 }
 
-.advantages__icon--functionality {
+.advantages__item-functionality::before {
+  @include position;
+
+  width: 60px;
+  height: 60px;
   background-image: url("../../icons/stack.svg#icon-fork");
 }
 
-.advantages__icon--health {
+.advantages__item-health::before {
+  @include position;
+
+  width: 60px;
+  height: 60px;
   background-image: url("../../icons/stack.svg#icon-clock");
 }
 
@@ -94,10 +106,31 @@
   line-height: 18px;
   width: 200px;
   height: 54px;
+  margin-left: 80px;
 
   @media (min-width: $tablet) {
     width: 204px;
     height: 72px;
   }
+
+  @media (min-width: $desktop) {
+    width: 204px;
+    padding-top: 151px;
+  }
 }
 
+.advantages__count {
+  display: none;
+
+
+  @media (min-width: $tablet) {
+    @include position;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    color: #f2f2f2;
+    display: block;
+    z-index: -1;
+    right: 0;
+    top: 32%;
+  }
+}

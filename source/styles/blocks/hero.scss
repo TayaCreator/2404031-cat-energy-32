@@ -37,7 +37,7 @@
       linear-gradient(to right,
       #ffffff 50%,
       rgba(104, 183, 56, 0.85)
-      50%), url("/source/images/index-catbackground-desktop@2x.png");
+      50%), url("/../../source/images/index-catbackground-desktop@2x.png");
 
   }
 }
@@ -50,6 +50,7 @@
 
   @media (min-width: $desktop) {
     flex-direction: row;
+    margin-bottom: 84px;
   }
 }
 
@@ -84,10 +85,12 @@
 
 .hero__button {
   @include primary-button;
+  padding: 10px 64px;
 
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 26px;
+    padding: 14px 26px;
   }
 }
 

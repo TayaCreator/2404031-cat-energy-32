@@ -10,41 +10,17 @@ body {
   min-width: 320px;
 }
 
-.container {
-  width: 280px;
-  padding: 0 20px;
-
-  @media (min-width: $tablet) {
-    width: 708px;
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop) {
-    width: 1220px;
-    padding: 0 110px;
-  }
-}
-
 
 .body--main-image::before {
   content: "";
   position: absolute;
-  margin-left: 720px;
-  background: url("/source/images/index-catbackground-desktop@2x.jpg");
-  width: 720px;
+  background-image: linear-gradient(90deg, #ffffff 50%, $primary-color 50%, rgba(104, 183, 56, 0.8)), url("/../../images/index-backgroundcat-mobile@2x.png");
+  background-position: top left, top right;
+  background-repeat: no-repeat;
+  width: 95%;
   height: 694px;
-  top: 0%;
-  left: 50%;
-  z-index: 2;
-}
-
-.body--main-image::after {
-  content: "";
-  position: absolute;
-  background-image: linear-gradient(90deg, #ffffff 50%, $primary-color 50%);
-  top: 0;
-  left: -50%;
-  z-index: 1;
+  left: 100px;
+  z-index: -2;
 }
 
 

@@ -10,9 +10,10 @@
   }
 
   @media (min-width: $desktop) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    grid-template-rows: 374px;
+    column-gap: 80px;
   }
 }
 
@@ -20,15 +21,20 @@
 .programmes__type {
   background-color: #f2f2f2;
   width: 280px;
+  padding: 21px 20px 18px;
+  margin-bottom: 20px;
+
 
   @media (min-width: $tablet) {
     width: 708px;
     height: 372px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop) {
     width: 570px;
     height: 374px;
+    margin-right: 80px;
   }
 }
 
@@ -41,15 +47,6 @@
   text-transform: uppercase;
 }
 
-.programmes__type-description {
-  font-family: $primary-font;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  text-align: left;
-}
-
-
 .programmes__cat-slim-image {
 
   background: #68b738;
@@ -58,11 +55,11 @@
   height: 53px;
   border-radius: 50%;
 
-  @media (min-width: $tablet) {
+  @media (min-width: 768px) {
     width: 200px;
     height: 200px;
 
-    @media (min-width: $desktop) {
+    @media (min-width: 1440px) {
       width: 100px;
       height: 100px;
     }
@@ -72,18 +69,18 @@
 .programmes__cat-slim-image::after {
   content: "";
   background: url("../../icons/stack.svg#cat-slim-tablet") no-repeat 0 0;
-  width: 36px;
+  width: 50px;
   height: 50px;
   position: absolute;
 
-  @media (min-width: $tablet) {
+  @media (min-width: 768px) {
     width: 140px;
     height: 194px;
     left: 25px;
     top: -10px;
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: 1440px) {
     width: 70px;
     height: 97px;
     left: 25px;
@@ -96,24 +93,34 @@
 
   background: #68b738;
   position: relative;
-  width: 67px;
+  width: 50px;
   height: 50px;
   border-radius: 50%;
 
-  @media (min-width: $tablet) {
+  @media (min-width: 768px) {
     width: 200px;
     height: 200px;
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: 1440px) {
     width: 100px;
     height: 100px;
   }
 }
 
+
+.programmes__type-description {
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+
+
 .programmes__cat-mass-image::after {
   content: "";
-  background: url("../../icons/stack.svg#cat-mass-mobile") no-repeat -15px 0;
+  background: url("../../icons/stack.svg#cat-mass-mobile");
   width: 67px;
   height: 28px;
   position: absolute;
@@ -138,6 +145,7 @@
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+  position: relative;
   display: flex;
 }
 
@@ -150,6 +158,7 @@
   position: absolute;
   right: 130px;
 
+
   @media (min-width: $tablet) {
     right: 495px;
   }
@@ -157,4 +166,8 @@
   @media (min-width: $desktop) {
     right: 357px;
   }
+}
+
+.programmes__type-link:hover::after {
+  transform: scale(1);
 }

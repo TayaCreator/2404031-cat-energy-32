@@ -36,10 +36,20 @@
 
 
   @media (min-width: $desktop) {
-    color: #000000;
+    color: #ffffff;
     font-family: "Oswald", sans-serif;
     font-size: 20px;
     line-height: 29.64px;
+  }
+}
+
+.main-nav__link--current {
+  @media (min-width: $tablet) {
+    border-bottom: $primary-color 2px solid;
+  }
+
+  @media (min-width: $desktop) {
+    border-bottom: #ffffff 2px solid;
   }
 }
 

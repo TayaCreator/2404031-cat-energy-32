@@ -32,8 +32,13 @@
 
 @mixin list-style {
   list-style-type: none;
+  padding: 0;
 }
 
 
 $primary-color: #68b738;
 
+@mixin position {
+  content: "";
+  position: absolute;
+}
