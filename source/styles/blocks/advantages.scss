@@ -15,20 +15,17 @@
   @include list-style;
   margin: 0;
   padding: 0;
-  display: block;
 
 
   @media (min-width: $tablet) {
     display: grid;
-    grid-template-columns: repeat(2, 230px);
+    grid-template-columns: repeat(2, 246px);
     grid-template-rows: repeat (2, 280px);
     gap: 37px 153px;
   }
 
   @media (min-width: $desktop) {
-    display: grid;
-    grid-template-columns: repeat(4, 230px);
-    row-gap: 94px;
+    display: flex;
   }
 }
 
@@ -116,6 +113,7 @@
   @media (min-width: $desktop) {
     width: 204px;
     padding-top: 151px;
+    margin-left: 0;
   }
 }
 
