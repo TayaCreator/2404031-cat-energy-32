@@ -18,14 +18,13 @@
 
 
   @media (min-width: $tablet) {
-    display: grid;
-    grid-template-columns: repeat(2, 246px);
-    grid-template-rows: repeat (2, 280px);
-    gap: 37px 153px;
+    display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop) {
     display: flex;
+    justify-content: space-between;
   }
 }
 
