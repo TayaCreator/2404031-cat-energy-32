@@ -14,7 +14,7 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="body page__body body--main-image">
+<body class="body page__body container body--main-image">
   <header class="main-header container">
     <div class="main-header__wrapper">
 
@@ -48,7 +48,7 @@
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Питание для котов</h1>
-    <section class="hero  container">
+    <section class="hero container">
       <div class="hero__wrapper">
         <div>
           <h2 class="hero__title">Функциональное питание для котов</h2>
@@ -119,67 +119,70 @@
 
       </div>
     </section>
-    <section class="example container">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+    <section class="example">
+      <div class="example__wrapper container">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 
-      <div class="example__value weight">
-        <span class="example__text">Снижение веса:</span>
-        <span class="example__text-result">5 КГ</span>
-      </div>
-      <div class="example__value days">
-        <span class="example__text">Затрачено времени:</span>
-        <span class="example__text-result">60 ДНЕЙ</span>
-      </div>
+        <div class="example__value weight">
+          <span class="example__text">Снижение веса:</span>
+          <span class="example__text-result">5 КГ</span>
+        </div>
+        <div class="example__value days">
+          <span class="example__text">Затрачено времени:</span>
+          <span class="example__text-result">60 ДНЕЙ</span>
+        </div>
 
-      <span class="example__text-sum">затраты на питание: 15 000 руб.</span>
+        <span class="example__text-sum">затраты на питание: 15 000 руб.</span>
 
-      <div class="example-slider">
+        <div class="example-slider">
 
-        <!--  слайд до - толстый кот  -->
+          <!--  слайд до - толстый кот  -->
 
-        <picture>
-          <source type="image/png" media="(min-width:1440px)" srcset="images/slide-before-desktop@1x.png 1x, images/slide-before-desktop@2x.png 2x" width="560" height="512">
-          <source type="image/png" media="(min-width:768px)" srcset="images/slide-before-tablet@1x.png 1x, images/slide-before-tablet@2x.png 2x" width="560" height="512">
-          <img class="example__slide-before" src="images/slide-before-mobile@1x.png" srcset="images/slide-before-mobile@2x.png 2x" width="280" height="256" alt="толстый кот">
-        </picture>
+          <picture>
+            <source type="image/png" media="(min-width:1440px)" srcset="images/slide-before-desktop@1x.png 1x, images/slide-before-desktop@2x.png 2x" width="560" height="512">
+            <source type="image/png" media="(min-width:768px)" srcset="images/slide-before-tablet@1x.png 1x, images/slide-before-tablet@2x.png 2x" width="560" height="512">
+            <img class="example__slide-before" src="images/slide-before-mobile@1x.png" srcset="images/slide-before-mobile@2x.png 2x" width="280" height="256" alt="толстый кот">
+          </picture>
 
-        <!--  Слайд после - кот похудевший -->
+          <!--  Слайд после - кот похудевший -->
 
-        <picture>
-          <source type="image/png" media="(min-width:1440px)" srcset="images/slide-after-desktop@1x.png 1x, images/slide-after-desktop@2x.png 2x" width="560" height="512">
-          <source type="image/png" media="(min-width:768px)" srcset="images/slide-after-tablet@1x.png 1x, images/slide-after-tablet@2x.png 2x" width="560" height="512">
-          <img class="example__slide-after" src="images/slide-after-mobile@1x.png" srcset="images/slide-after-mobile@2x.png 2x" width="280" height="256" alt="похудевший кот">
-        </picture>
+          <picture>
+            <source type="image/png" media="(min-width:1440px)" srcset="images/slide-after-desktop@1x.png 1x, images/slide-after-desktop@2x.png 2x" width="560" height="512">
+            <source type="image/png" media="(min-width:768px)" srcset="images/slide-after-tablet@1x.png 1x, images/slide-after-tablet@2x.png 2x" width="560" height="512">
+            <img class="example__slide-after" src="images/slide-after-mobile@1x.png" srcset="images/slide-after-mobile@2x.png 2x" width="280" height="256" alt="похудевший кот">
+          </picture>
 
-        <button class="slider-button" type="button">
-          <span class="visually-hidden">Потяните, чтобы сравнить результаты ДО и ПОСЛЕ</span>
-        </button>
+          <button class="slider-button" type="button">
+            <span class="visually-hidden">Потяните, чтобы сравнить результаты ДО и ПОСЛЕ</span>
+          </button>
+        </div>
       </div>
     </section>
 
-    <section class="contacts container">
+    <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Наши контакты</h2>
         <a href="#" alt="Как нас найти"></a>
-        <div class="contacts__info container">
+        <div class="contacts__info container contacts__info--container">
           <span class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</span>
           <span class="contacts__street">ул. Большая Конюшенная<br> д. 19/8 Санкт-Петербург</span>
         </div>
-        <!--  Карта константная  -->
+      </div>
+      <!--  Карта константная  -->
 
-        <picture>
-          <source type="image/png" media="(min-width:1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
-          <source type="image/png" media="(min-width:768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
-          <img class="contacts__map-constant" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="кэт энерджи. адрес на карте">
-        </picture>
+      <picture>
+        <source type="image/png" media="(min-width:1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
+        <source type="image/png" media="(min-width:768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
+        <img class="contacts__map-constant" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="кэт энерджи. адрес на карте">
+      </picture>
 
       </div>
     </section>
   </main>
 
-  <footer class="footer container">
-    <div class="footer__container">
+  <footer class="footer">
+    <div class="footer__container container">
       <a class="footer__logo-link cattext--logo" href="index.html">
         <span class="visually-hidden">Академия Кэт Энерджи</span>
       </a>

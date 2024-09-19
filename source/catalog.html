@@ -22,15 +22,15 @@
 
       </a>
       <nav class="main-nav">
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--catalog">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html" aria-current="page">Главная</a>
+            <a class="main-nav__link main-nav__link--catalog" href="index.html" aria-current="page">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link current" href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link main-nav__link--catalog main-nav__link-current--catalog" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Подбор программы</a>
+            <a class="main-nav__link main-nav__link--catalog" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -39,7 +39,7 @@
   <main class="main-container">
     <section class="catalog container">
       <h1 class="catalog__main-title">Каталог продукции</h1>
-      <ul class="catalog__product-list">
+      <ul class="catalog__product-list catalog__product-list--catalog">
         <!-- Продукт 1 в каталоге -->
         <li class="catalog__product-item">
           <div class="catalog__product-wrapper">
@@ -322,7 +322,7 @@
         <p class="promotions__description">Подпишитесь на наши новостии не пропустите не одного предложения!</p>
         <form class="promotions-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscription-email">Укажите свой e-mail и нажмите кнопку подписаться</label>
-          <input class="subscription-field" type="email" name="subscription-email" id="subscription-email" placeholder="CUCLACHEV@GMAIL.COM" required>
+          <input class="promotions__subscription-field" type="email" name="subscription-email" id="subscription-email" placeholder="CUCLACHEV@GMAIL.COM" required>
           <button class="promotions__button" type="submit">Подписаться</button>
         </form>
       </div>
@@ -349,9 +349,9 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer__container">
-      <a class="footer__logo-link" href="index.html">
+  <footer class="footer ">
+    <div class="footer__container container">
+      <a class="footer__logo-link cattext--logo" href="index.html">
         <span class="visually-hidden">Академия Кэт Энерджи</span>
       </a>
       <div class="footer__socials">

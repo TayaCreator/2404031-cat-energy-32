@@ -17,6 +17,7 @@
   }
 }
 
+
 .main-nav__link {
   color: #000000;
   font-family: "Oswald", sans-serif;
@@ -50,6 +51,18 @@
 
   @media (min-width: $desktop) {
     border-bottom: #ffffff 2px solid;
+  }
+}
+
+.main-nav__link--catalog {
+  @media (min-width: $desktop) {
+    color: #000000;
+  }
+}
+
+.main-nav__link-current--catalog {
+  @media (min-width: $tablet) {
+    border-bottom: $primary-color 2px solid;
   }
 }
 

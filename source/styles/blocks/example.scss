@@ -1,5 +1,9 @@
 .example {
   background-color: #eaeaea;
+}
+
+.example__wrapper {
+
   display: block;
 
   @media (min-width: $tablet) {
