@@ -67,11 +67,7 @@ ul.catalog__product-list {
   grid-template-columns: repeat(2, 140px);
   grid-template-rows: 55px auto 57px;
 
-
   @media (min-width: $tablet) {
-    flex-direction: column;
-    height: 471px;
-    margin: 0 37px 40px;
     display: flex;
     font-family: "Oswald", sans-serif;
     font-size: 20px;
@@ -81,15 +77,13 @@ ul.catalog__product-list {
   }
 
   @media (min-width: $desktop) {
+    width: 140px;
     margin: 0;
     margin-right: 14px;
     margin-left: 15px;
-    display: flex;
-    flex-direction: column;
-    width: 169px;
-    height: 471px;
   }
 }
+
 
 .catalog__product-item-image {
   @media (min-width: $tablet) {

@@ -172,44 +172,6 @@
     height: 80px;
     top: 41px;
   }
-
-  @media (min-width: 768px) {
-    width: 230px;
-    height: 280px;
-  }
-}
-
-/*
-.advantages__item::before {
-  position: absolute;
-  z-index: 2;
-  width: 60px;
-  height: 60px;
-  background-color: $primary-color;
-}
-  */
-
-.advantages__icon {
-  display: flex;
-  width: 60px;
-  height: 60px;
-  background-color: $primary-color;
-}
-
-.advantages__icon--benefit {
-  background-image: url("../../icons/stack.svg#icon-leaf");
-}
-
-.advantages__icon--fast {
-  background-image: url("../../icons/stack.svg#icon-instant");
-}
-
-.advantages__icon--functionality {
-  background-image: url("../../icons/stack.svg#icon_eat");
-}
-
-.advantages__icon--health {
-  background-image: url("../../icons/stack.svg#icon-clock");
 }
 
 
