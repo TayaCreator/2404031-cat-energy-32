@@ -11,8 +11,13 @@
 
 @mixin primary-button {
   background: #68b738;
-  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
   text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 
@@ -22,7 +27,6 @@
   font-weight: 400;
   line-height: 29.64px;
   text-align: left;
-  min-height: 56px;
 }
 
 @mixin list-style {
@@ -37,14 +41,3 @@ $primary-color: #68b738;
   content: "";
   position: absolute;
 }
-
-@mixin list-style {
-  list-style-type: none;
-}
-
-
-$primary-color: #68b738;
-
-$tablet: 768px;
-$desktop: 1440px;
-
