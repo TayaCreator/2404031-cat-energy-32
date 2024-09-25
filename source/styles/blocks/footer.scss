@@ -6,33 +6,40 @@
 }
 
 .footer__container {
-  display: block;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet) {
     display: flex;
+    flex-direction: row;
     width: 708px;
     padding: 55px 30px;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $desktop) {
     width: 1220px;
-    padding: 66px 110px;
+    align-items: center;
   }
 }
+
 
 .cattext--logo {
   mask-image: url("../../icons/stack.svg#logo-text");
   background-color: #111111;
-  width: 113px;
-  height: 20px;
+  width: 128px;
+  height: 24px;
+  margin: 40px 76px;
   cursor: pointer;
 
   @media (min-width: $tablet) {
     width: 128px;
     height: 24px;
+    margin: 0;
   }
 }
+
 
 .cattext--logo:hover,
 .cattext--logo:focus {
@@ -44,12 +51,19 @@
 }
 
 .footer__social-list {
+
+  margin: 0 74px 40px;
+
   @include list-style;
   width: 132px;
   height: 22px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .footer__social-link {
@@ -83,11 +97,13 @@
   height: 34px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 
   @media (min-width: 768px) {
     display: flex;
     width: 168px;
     height: 37px;
+    margin-bottom: 0;
   }
 }
 
@@ -98,6 +114,7 @@
   width: 113px;
   height: 19px;
   cursor: pointer;
+  padding: 7px 0;
 }
 
 .footer__logo-text:hover,

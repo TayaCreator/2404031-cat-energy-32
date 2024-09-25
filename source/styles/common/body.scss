@@ -1,15 +1,12 @@
 body {
   font-family: $primary-font;
-  font-size: 16px;
-  line-height: 24px;
   position: relative;
 }
 
 .page__body {
   min-width: 320px;
 }
-
-
+/*
 .body--main-image::before {
   content: "";
   position: absolute;
@@ -20,7 +17,7 @@ body {
   height: 694px;
   top: 0%;
   z-index: -2;
-}
+} */
 
 
 .visually-hidden {

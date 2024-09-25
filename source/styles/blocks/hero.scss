@@ -3,6 +3,14 @@
 .hero {
 
   font-family: "Oswald", sans-serif;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 540px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 266px;
+  }
 }
 
 
@@ -48,9 +56,20 @@
   flex-direction: column;
   flex-shrink: 0;
 
+  /* @media (min-width: $tablet) {
+    margin-bottom: 526px;
+  } */
+
+
   @media (min-width: $desktop) {
-    flex-direction: row;
-    margin-bottom: 134px;
+    margin-bottom: 160px;
+  }
+}
+
+.hero__text {
+  @media (min-width: $desktop) {
+    font-family: $secondary-font;
+    position: relative;
   }
 }
 
@@ -60,18 +79,37 @@
   line-height: 36px;
   font-weight: 400;
   color: #ffffff;
+  text-align: center;
+  margin: 27px 0 25px;
+  padding: 0 15px;
 
   @media (min-width: $tablet) {
     color: #000000;
+    font-family: $secondary-font;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    font-weight: 400;
+    margin: 52px 0 40px;
+    padding: 0;
+    width: 418px;
+    padding-left: 81px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 418px;
+    margin-top: 107px;
   }
 }
 
 .hero__description {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
+  min-width: 198px;
+  padding: 0 62px 302px 81px;
 
   @media (min-width: $tablet) {
     font-family: "Oswald", sans-serif;
@@ -80,22 +118,59 @@
     line-height: 20px;
     text-align: left;
     color: #000000;
+    padding-bottom: 45px;
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 283px;
+    margin-bottom: 22px;
   }
 }
 
 .hero__button {
-  @include primary-button;
-  padding: 10px 64px;
+  background: #68b738;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 302px;
+  padding: 10px 63px;
 
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 26px;
+    padding: 12px 26px;
+    margin-left: 81px;
+  }
+
+  @media (min-width: $desktop) {
     padding: 14px 26px;
   }
 }
 
 .hero__main-picture {
+  position: absolute;
+  content: "";
+  top: 220px;
+
+  @media (min-width: $tablet) {
+    top: 315px;
+    left: 50px;
+    z-index: -1;
+  }
+
   @media (min-width: $desktop) {
-    margin: 143px 331px 52px 163px;
+    padding: 0;
+    position: absolute;
+    content: "";
+    left: 665px;
+    top: 90px;
   }
 }
+

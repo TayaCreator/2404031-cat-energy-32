@@ -1,15 +1,12 @@
 .additional-products {
-  width: 320px;
-  height: 904px;
+  background-color: #ffffff;
 
   @media (min-width: $tablet) {
-    width: 768px;
-    height: 938px;
+    background-color: #ffffff;
   }
 
   @media (min-width: $desktop) {
-    width: 1440px;
-    height: 408px;
+    background-color: #ffffff;
   }
 }
 
@@ -28,11 +25,18 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  text-align: center;
   color: #000000;
+  margin-bottom: 49px;
+  margin-top: 25px;
 }
 
 .additional-products__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 98px;
+  margin-bottom: 31px;
+
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 407px 223px;
@@ -54,6 +58,7 @@
   text-align: left;
   color: #222222;
   text-transform: uppercase;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet) {
     font-size: 20px;
@@ -76,6 +81,9 @@
   color: #444444;
   display: flex;
   justify-content: space-between;
+  width: 280px;
+  min-height: 14px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet) {
     grid-column: 2/3;
@@ -104,17 +112,30 @@
   }
 }
 
-.additional-products__benefit-description {
-  background: #68b738;
-  font-family: $primary-font;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
-  color: #ffffff;
+.additional-products__benefit {
+  background-image: url("/../../images/cat-catalog-mobile@2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 280px;
+  height: 290px;
+  margin-top: 73px;
 
   @media (min-width: $desktop) {
     grid-column: 2/3;
     grid-row: 1/2;
   }
 }
+
+.additional-products__benefit-description {
+
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  height: 290px;
+  padding: 186.96px 61px 43.02px 58px;
+  width: 161px;
+}
+

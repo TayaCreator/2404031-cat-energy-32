@@ -5,11 +5,20 @@
 
 .catalog__main-title {
   font-family: "Oswald", sans-serif;
-  font-size: 60px;
+  font-size: 36px;
+  line-height: 36px;
   font-weight: 400;
-  line-height: 60px;
   text-align: left;
   color: #000000;
+  margin-bottom: 41px;
+  margin-top: 27px;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 62px;
+    margin-bottom: 84px;
+  }
 }
 
 ul.catalog__product-list {
@@ -39,10 +48,7 @@ ul.catalog__product-list {
   @media (min-width: $tablet) {
     width: 324px;
     height: 511px;
-    background-image:
-      linear-gradient(180deg,
-      #ffffff 30%,
-      #f2f2f2 30%);
+    background-image: linear-gradient(180deg, #ffffff 80px, #f2f2f2 80px);
   }
 
   @media (min-width: $desktop) {
@@ -55,16 +61,19 @@ ul.catalog__product-list {
   display: grid;
   width: 280px;
   height: 164px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 140px);
   grid-template-rows: 55px auto 57px;
 
 
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: column;
-    width: 250px;
     height: 471px;
-    margin: 0 37px 40px;
+    margin: 0 37 40px;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    width: 324px;
   }
 
 
@@ -77,15 +86,24 @@ ul.catalog__product-list {
   }
 }
 
+
 .catalog__product-item-image {
-  margin: 19px 4px;
+  @media (min-width: $tablet) {
+    margin: -8px 25px 22px;
+  }
 }
 
 .catalog__product-image-link {
-  display: grid;
+
   width: 140px;
-  grid-column: 1/2;
-  grid-row: 1/3;
+  padding: 19px 4px;
+
+
+  @media (min-width: $tablet) {
+    width: 161px;
+    height: 172px;
+    margin-bottom: 31px;
+  }
 }
 
 .catalog__product-title {
@@ -97,23 +115,47 @@ ul.catalog__product-list {
   color: #222222;
   text-transform: uppercase;
   width: 76px;
+  min-height: 41px;
   grid-column: 2/3;
   grid-row: 1/2;
-
+  margin-top: 20px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet) {
-    display: flex;
-    font-family: "Oswald", sans-serif;
     font-size: 20px;
     line-height: 24px;
+    text-align: center;
+    margin-left: 66px;
     width: 135px;
+    min-height: 47px;
   }
+}
 
-  @media (min-width: $desktop) {
-    width: 140px;
-    margin-right: 14px;
-    margin-left: 15px;
-  }
+
+.catalog__product-wrapper--show-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  height: 158px;
+}
+
+.catalog__product-title--show-more {
+  width: 204px;
+  margin-top: 78px;
+  margin-bottom: -21px;
+}
+
+.catalog__products-description--show-more {
+  font-family: $primary-font;
+  font-size: 12px;
+  font-weight: 400px;
+  line-height: 16px;
+  text-align: center;
+  width: 219px;
+  padding: 0;
+  margin-top: 8px;
+  margin-bottom: 20px;
 }
 
 .catalog__stats {
@@ -123,6 +165,11 @@ ul.catalog__product-list {
   line-height: 16px;
   text-align: center;
   color: #444444;
+  grid-column: 2/3;
+  width: 140px;
+  min-height: 48px;
+  margin-top: 18px;
+  margin-bottom: 20px;
 
 
   @media (min-width: 768px) {
@@ -141,12 +188,13 @@ ul.catalog__product-list {
   justify-content: space-between;
   width: 140px;
   height: 16px;
-  margin-bottom: 10px;
+
 
   @media (min-width: 768px) {
     width: 250px;
     height: 20px;
     border-bottom: 1px solid #cdcdcd;
+    margin-bottom: 10px;
   }
 
   @media (min-width: 1440px) {
@@ -158,23 +206,31 @@ ul.catalog__product-list {
 .catalog__button {
   grid-column: 1/3;
   grid-row: 3/4;
+  padding: 10px 90px;
 
   @include primary-button;
   text-align: center;
   text-transform: uppercase;
   height: 20px;
-  padding: 10px 94px;
 
   @media (min-width: $tablet) {
+    display: flex;
+
     @include primary-button;
-    padding: 10px 53px 10px 54px;
+    padding: 10px 54px;
     text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
   }
 }
 
-.secondary--button {
+
+.catalog__button--secondary-button {
   color: #444444;
   background-color: #f2f2f2;
+  padding: 10px 94px;
 }
 
 .catalog__products-descrition {
