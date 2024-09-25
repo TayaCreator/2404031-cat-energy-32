@@ -1,6 +1,5 @@
 .advantages {
   font-family: $primary-font;
-  width: 280px;
 }
 
 .advantages__wrapper {
@@ -38,8 +37,6 @@
   margin: 0;
   padding: 0;
   margin-bottom: 39px;
-
-
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
@@ -73,12 +70,16 @@
 
   @media (min-width: $desktop) {
     width: 230px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-wrap: nowrap;
+    width: 1220px;
     height: 280px;
     display: flex;
     flex-direction: row;
   }
 }
-
 
 .advantages__item:not(:last-child) {
   margin-bottom: 20px;
@@ -176,10 +177,22 @@
 
 
 .advantages-description {
+.advantages__list {
+  @include list-style;
+  display: block;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.advantages__item {
   font-family: $primary-font;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+
   width: 200px;
   height: 54px;
   margin-left: 80px;
@@ -225,4 +238,3 @@
     right: 0;
   }
 }
-
